@@ -18,7 +18,9 @@ Este projeto utiliza Machine Learning para prever a rotatividade de clientes (Ch
 ## 🚀 Como Executar
 1. Clone o repositório.
 2. Instale as dependências: `pip install -r requirements.txt` (opcional).
-3. Execute o notebook `notebook_churn.ipynb`.
+3. Execute o notebook `modelagem_churn.ipynb`.
 
 ## 📈 Conclusão
 O modelo final prioriza o **Recall**, garantindo que a empresa identifique o máximo de clientes em risco. A estratégia recomendada foca na conversão de contratos mensais para anuais e no monitoramento intensivo de novos clientes.
+
+![Importância das Variáveis](grafico_churn.png)
