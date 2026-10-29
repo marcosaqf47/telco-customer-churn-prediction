@@ -39,5 +39,3 @@ pip install pandas scikit-learn matplotlib seaborn
 
 # Run notebook
 jupyter notebook churn_prediction.ipynb
-
-![Importância das Variáveis](grafico_churn.png)
