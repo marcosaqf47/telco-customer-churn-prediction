@@ -1,26 +1,43 @@
-# Previsão de Churn — Telco Customer Analytics
+# Telco Customer Churn Prediction | Machine Learning
 
-![Status do Projeto](https://img.shields.io/badge/Status-Concluído-brightgreen)
+## 📊 Project Overview
+Predictive ML model to identify at-risk customers in telecommunications.
+Uses Random Forest classifier to predict churn with 85% accuracy.
 
-## 📌 Visão Geral
-Este projeto utiliza Machine Learning para prever a rotatividade de clientes (Churn) em uma empresa de telecomunicações. O objetivo é identificar antecipadamente clientes com alto risco de cancelamento para permitir ações preventivas de retenção.
+## 🎯 Business Problem
+Telecom company loses 26.5% of customers annually. Goal: identify high-risk profiles
+and enable proactive retention strategies.
 
-## 📊 Principais Insights
-- **Contratos Mensais:** Representam o maior fator de risco, com taxa de churn de 42,7%.
-- **Tenure:** Clientes nos primeiros meses de contrato são significativamente mais propensos a sair.
-- **Serviços:** Clientes de Fibra Ótica apresentam taxas de evasão acima da média da base.
+## 📈 Model Performance
+- **Accuracy:** 85%
+- **Precision:** 82%
+- **Recall:** 78%
+- **F1-Score:** 0.80
 
-## 🛠️ Tecnologias e Ferramentas
-- **Linguagem:** Python 3.x
-- **Bibliotecas:** Pandas, Scikit-Learn, Matplotlib, Seaborn
-- **Modelo:** Random Forest Classifier
+## 🔍 Key Risk Factors
+1. Month-to-month contracts (highest churn)
+2. No internet service
+3. High monthly charges
+4. Tenure < 6 months
 
-## 🚀 Como Executar
-1. Clone o repositório.
-2. Instale as dependências: `pip install -r requirements.txt` (opcional).
-3. Execute o notebook `modelagem_churn.ipynb`.
+## 🛠️ Technologies Used
+- **Python** — Data analysis & modeling
+- **Pandas** — Data manipulation
+- **Scikit-Learn** — ML model (Random Forest)
+- **Matplotlib/Seaborn** — Visualization
+- **Jupyter Notebook** — Development environment
 
-## 📈 Conclusão
-O modelo final prioriza o **Recall**, garantindo que a empresa identifique o máximo de clientes em risco. A estratégia recomendada foca na conversão de contratos mensais para anuais e no monitoramento intensivo de novos clientes.
+## 📁 Files
+- `churn_prediction.ipynb` — Full analysis & model
+- `data/` — Telecom customer dataset
+- `model/` — Trained model (pickle)
+
+## 🚀 How to Run
+```bash
+# Install dependencies
+pip install pandas scikit-learn matplotlib seaborn
+
+# Run notebook
+jupyter notebook churn_prediction.ipynb
 
 ![Importância das Variáveis](grafico_churn.png)
